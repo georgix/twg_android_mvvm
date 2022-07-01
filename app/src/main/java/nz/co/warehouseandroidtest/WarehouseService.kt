@@ -54,8 +54,8 @@ interface WarehouseService {
     val newUserId: Call<User?>
 
     @GET("bolt/price.json")
-    fun getProductDetail(@QueryMap paramMap: Map<String?, String?>?): Call<ProductDetail?>
+    fun getProductDetail(@QueryMap paramMap: Map<String, String?>): Call<ProductDetail?>
 
     @GET("bolt/search.json")
-    fun getSearchResult(@QueryMap paramMap: Map<String?, String?>?): Call<SearchResult?>
+    fun getSearchResult(@QueryMap paramMap: Map<String, String?>): Call<SearchResult?>
 }

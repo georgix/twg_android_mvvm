@@ -82,12 +82,11 @@ class SearchResultAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             val view =
                 LayoutInflater.from(parent.context).inflate(R.layout.item_product, parent, false)
             return SearchResultViewHolder(view)
-        } else if (viewType == TYPE_FOOTER) {
+        } else {
             val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.layout_refresh_footer, parent, false)
             return FooterViewHolder(view)
         }
-        return null
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {

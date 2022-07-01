@@ -107,16 +107,16 @@ class SearchResultActivity : AppCompatActivity() {
     }
 
     private fun loadData(startIndex: Int, itemsPerPage: Int) {
-        val paramsMap: MutableMap<*, *> = HashMap<String, String>()
+        val paramsMap = mutableMapOf<String, String?>()
         paramsMap["Search"] = mKeyWord
         paramsMap["MachineID"] = Constants.MACHINE_ID
         paramsMap["UserID"] = PreferenceUtil.getUserId(this)
         paramsMap["Branch"] = Constants.BRANCH_ID
         paramsMap["Start"] = startIndex.toString()
         paramsMap["Limit"] = itemsPerPage.toString()
-        (applicationContext as WarehouseTestApp).warehouseService.getSearchResult(paramsMap)
-            .enqueue(object : Callback<Any?> {
-                override fun onResponse(call: Call<*>?, response: Response<*>) {
+        (applicationContext as WarehouseTestApp).warehouseService?.getSearchResult(paramsMap)
+            ?.enqueue(object : Callback<SearchResult?> {
+                override fun onResponse(call: Call<SearchResult?>, response: Response<SearchResult?>) {
                     if (response.isSuccessful) {
                         val searchResult = response.body() as SearchResult?
                         val ifFound = searchResult!!.Found
@@ -139,7 +139,7 @@ class SearchResultActivity : AppCompatActivity() {
                     }
                 }
 
-                override fun onFailure(call: Call<*>?, t: Throwable) {
+                override fun onFailure(call: Call<SearchResult?>, t: Throwable) {
                     Toast.makeText(this@SearchResultActivity, "Search failed!", Toast.LENGTH_LONG)
                         .show()
                 }

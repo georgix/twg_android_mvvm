@@ -72,14 +72,14 @@ class ProductDetailActivity : AppCompatActivity() {
         tvPrice = findViewById<View>(R.id.tv_price) as TextView
         tvBarcode = findViewById<View>(R.id.tv_barcode) as TextView
         val barCode = intent.extras.getString(FLAG_BAR_CODE)
-        val paramMap: HashMap<*, *> = HashMap<String, String>()
+        val paramMap = mutableMapOf<String, String?>()
         paramMap["BarCode"] = barCode
         paramMap["MachineID"] = Constants.MACHINE_ID
         paramMap["UserID"] = PreferenceUtil.getUserId(this)
         paramMap["Branch"] = Constants.BRANCH_ID
-        (applicationContext as WarehouseTestApp).warehouseService.getProductDetail(paramMap)
-            .enqueue(object : Callback<Any?> {
-                override fun onResponse(call: Call<*>?, response: Response<*>) {
+        (applicationContext as WarehouseTestApp).warehouseService?.getProductDetail(paramMap)
+            ?.enqueue(object : Callback<ProductDetail?> {
+                override fun onResponse(call: Call<ProductDetail?>, response: Response<ProductDetail?>) {
                     if (response.isSuccessful) {
                         val productDetail = response.body() as ProductDetail?
                         Glide.with(this@ProductDetailActivity)
@@ -103,7 +103,7 @@ class ProductDetailActivity : AppCompatActivity() {
                     }
                 }
 
-                override fun onFailure(call: Call<*>?, t: Throwable) {
+                override fun onFailure(call: Call<ProductDetail?>, t: Throwable) {
                     Toast.makeText(
                         this@ProductDetailActivity,
                         "Get product detail failed!",

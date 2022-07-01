@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
             )
         }
         if (PreferenceUtil.getUserId(this) == null) {
-            (applicationContext as WarehouseTestApp).warehouseService.newUserId.enqueue(object :
+            (applicationContext as WarehouseTestApp).warehouseService?.newUserId?.enqueue(object :
                 Callback<User?> {
                 override fun onResponse(call: Call<User?>, response: Response<User?>) {
                     if (response.isSuccessful) {

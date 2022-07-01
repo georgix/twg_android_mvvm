@@ -61,7 +61,7 @@ class SearchActivity : AppCompatActivity() {
         searchView = findViewById<View>(R.id.search_view) as SearchView
         searchView!!.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String): Boolean {
-                if (null != query && query.length > 0) {
+                if (query.isNotEmpty()) {
                     val intent = Intent()
                     intent.setClass(this@SearchActivity, SearchResultActivity::class.java)
                     intent.putExtra(SearchResultActivity.Companion.FLAG_KEY_WORD, query)
