@@ -68,7 +68,7 @@ class SearchResultActivity : AppCompatActivity() {
                 }
             }
         })
-        mKeyWord = intent.extras.getString(FLAG_KEY_WORD)
+        mKeyWord = intent.extras?.getString(FLAG_KEY_WORD)
         loadData(startIndex, 20)
     }
 
@@ -84,7 +84,7 @@ class SearchResultActivity : AppCompatActivity() {
             ?.enqueue(object : Callback<SearchResult?> {
                 override fun onResponse(call: Call<SearchResult?>, response: Response<SearchResult?>) {
                     if (response.isSuccessful) {
-                        val searchResult = response.body() as SearchResult?
+                        val searchResult = response.body()
                         val ifFound = searchResult!!.Found
                         if (ifFound == "Y") {
                             totalItemNum = searchResult.HitCount

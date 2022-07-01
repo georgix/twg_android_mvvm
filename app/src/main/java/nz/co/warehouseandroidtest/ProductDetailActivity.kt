@@ -27,7 +27,7 @@ class ProductDetailActivity : AppCompatActivity() {
         ivClearance = findViewById<View>(R.id.iv_clearance) as ImageView
         tvPrice = findViewById<View>(R.id.tv_price) as TextView
         tvBarcode = findViewById<View>(R.id.tv_barcode) as TextView
-        val barCode = intent.extras.getString(FLAG_BAR_CODE)
+        val barCode = intent.extras?.getString(FLAG_BAR_CODE)
         val paramMap = mutableMapOf<String, String?>()
         paramMap["BarCode"] = barCode
         paramMap["MachineID"] = Constants.MACHINE_ID
@@ -37,7 +37,7 @@ class ProductDetailActivity : AppCompatActivity() {
             ?.enqueue(object : Callback<ProductDetail?> {
                 override fun onResponse(call: Call<ProductDetail?>, response: Response<ProductDetail?>) {
                     if (response.isSuccessful) {
-                        val productDetail = response.body() as ProductDetail?
+                        val productDetail = response.body()
                         Glide.with(this@ProductDetailActivity)
                             .load(productDetail!!.Product!!.ImageURL).into(
                             ivProduct!!

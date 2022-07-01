@@ -5,7 +5,10 @@ import android.content.pm.PackageManager
 import androidx.core.content.ContextCompat
 
 class PermissionChecker(var context: Context) {
-    fun ifLackPermissions(permissions: Array<String>): Boolean {
+    fun ifLackPermissions(permissions: Array<String>?): Boolean {
+        if (permissions == null) {
+            return false
+        }
         var i = 0
         while (i < permissions.size) {
             if (ifLackPermission(permissions[i])) {
