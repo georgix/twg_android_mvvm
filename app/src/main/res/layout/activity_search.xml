@@ -7,12 +7,12 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:theme="@style/AppTheme.PopupOverlay">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             app:contentInsetStartWithNavigation="0dp"
             app:navigationIcon="@mipmap/ic_scan_back">
 
-            <android.support.v7.widget.SearchView
+            <androidx.appcompat.widget.SearchView
                 android:id="@+id/search_view"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
@@ -31,8 +31,8 @@
                 app:showDividers="none"
                 app:submitBackground="@null">
 
-            </android.support.v7.widget.SearchView>
-        </android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
+            </androidx.appcompat.widget.SearchView>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
 
 </LinearLayout>

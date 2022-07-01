@@ -1,7 +1,7 @@
 package nz.co.warehouseandroidtest
 
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 abstract class EndlessRecyclerOnScrollListener : RecyclerView.OnScrollListener() {
     private var isSlidingUpward = false
