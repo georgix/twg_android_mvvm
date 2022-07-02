@@ -32,7 +32,6 @@ class ProductDetailActivity : AppCompatActivity() {
         paramMap["BarCode"] = barCode
         paramMap["MachineID"] = Constants.MACHINE_ID
         paramMap["UserID"] = PreferenceUtil.getUserId(this)
-        paramMap["Branch"] = Constants.BRANCH_ID
         (applicationContext as WarehouseTestApp).warehouseService?.getProductDetail(paramMap)
             ?.enqueue(object : Callback<ProductDetail?> {
                 override fun onResponse(call: Call<ProductDetail?>, response: Response<ProductDetail?>) {
