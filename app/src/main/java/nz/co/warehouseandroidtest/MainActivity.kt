@@ -3,37 +3,24 @@ package nz.co.warehouseandroidtest
 import android.Manifest
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import android.view.View
-import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import dagger.hilt.android.AndroidEntryPoint
 import nz.co.warehouseandroidtest.Utils.PreferenceUtil
 import nz.co.warehouseandroidtest.data.model.User
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     var permissions = arrayOf(Manifest.permission.CAMERA)
     var checker = PermissionChecker(this)
     val REQUEST_PERMISSION_CODE = 0
-    private var tvScan: TextView? = null
-    private var tvSearch: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        tvScan = findViewById<View>(R.id.tv_scan_barcode) as TextView
-        tvSearch = findViewById<View>(R.id.tv_search) as TextView
-        tvScan!!.setOnClickListener {
-            val intent = Intent()
-            intent.setClass(this@MainActivity, BarScanActivity::class.java)
-            startActivity(intent)
-        }
-        tvSearch!!.setOnClickListener {
-            val intent = Intent()
-            intent.setClass(this@MainActivity, SearchActivity::class.java)
-            startActivity(intent)
-        }
     }
 
     public override fun onResume() {

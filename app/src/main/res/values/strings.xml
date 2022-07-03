@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WarehouseAndroidTest</string>
+    <string name="connection_fail">Loading...</string>
 </resources>

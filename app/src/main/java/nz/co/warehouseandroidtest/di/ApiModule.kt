@@ -7,9 +7,14 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import nz.co.warehouseandroidtest.Constants
+import nz.co.warehouseandroidtest.data.remote.SearchApi
 import nz.co.warehouseandroidtest.data.remote.UserApi
+import nz.co.warehouseandroidtest.data.repository.SearchRepository
+import nz.co.warehouseandroidtest.data.repository.SearchRepositoryImp
 import nz.co.warehouseandroidtest.data.repository.UserRepository
 import nz.co.warehouseandroidtest.data.repository.UserRepositoryImp
+import nz.co.warehouseandroidtest.domain.ListUseCase
+import nz.co.warehouseandroidtest.domain.ListUseCaseImpl
 import nz.co.warehouseandroidtest.domain.UserUseCase
 import nz.co.warehouseandroidtest.domain.UserUseCaseImpl
 import okhttp3.OkHttpClient
@@ -60,12 +65,24 @@ class ApiModule {
     @Provides
     fun providesUserApi(retrofit: Retrofit) = retrofit.create(UserApi::class.java)
 
+
+    @Provides
+    fun provideSearchApi(retrofit: Retrofit) = retrofit.create(SearchApi::class.java)
+
+    @Module
+    @InstallIn(SingletonComponent::class)
     interface Binder {
         @Binds
         fun bindUserRepo(userRepository: UserRepositoryImp): UserRepository
 
         @Binds
+        fun bindSearchRepo(searchRepository: SearchRepositoryImp): SearchRepository
+
+        @Binds
         fun bindUserUseCase(userUseCase: UserUseCaseImpl): UserUseCase
+
+        @Binds
+        fun bindListUseCase(listUseCase: ListUseCaseImpl): ListUseCase
     }
 
 }
