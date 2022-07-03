@@ -3,10 +3,12 @@ package nz.co.warehouseandroidtest
 import android.app.Application
 import com.google.gson.GsonBuilder
 import com.uuzuche.lib_zxing.activity.ZXingLibrary
+import dagger.hilt.android.HiltAndroidApp
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+@HiltAndroidApp
 class WarehouseTestApp : Application() {
     var warehouseService: WarehouseService? = null
         private set

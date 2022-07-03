@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import nz.co.warehouseandroidtest.Utils.PreferenceUtil
-import nz.co.warehouseandroidtest.data.User
+import nz.co.warehouseandroidtest.data.model.User
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

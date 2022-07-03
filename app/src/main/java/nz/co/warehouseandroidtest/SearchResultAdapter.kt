@@ -4,7 +4,7 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import nz.co.warehouseandroidtest.data.ProductWithoutPrice
+import nz.co.warehouseandroidtest.data.model.ProductWithoutPrice
 
 class SearchResultAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private val data: MutableList<ProductWithoutPrice?> = ArrayList()

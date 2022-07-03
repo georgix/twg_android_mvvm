@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import nz.co.warehouseandroidtest.ProductDetailActivity
-import nz.co.warehouseandroidtest.data.ProductWithoutPrice
+import nz.co.warehouseandroidtest.data.model.ProductWithoutPrice
 
 class SearchResultViewHolder(private val mItemView: View) : RecyclerView.ViewHolder(
     mItemView

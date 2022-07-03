@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.widget.Toast
 import nz.co.warehouseandroidtest.Utils.PreferenceUtil
-import nz.co.warehouseandroidtest.data.ProductWithoutPrice
-import nz.co.warehouseandroidtest.data.SearchResult
+import nz.co.warehouseandroidtest.data.model.ProductWithoutPrice
+import nz.co.warehouseandroidtest.data.model.SearchResult
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

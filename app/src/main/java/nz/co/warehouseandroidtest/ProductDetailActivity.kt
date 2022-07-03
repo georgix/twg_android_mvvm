@@ -8,7 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import nz.co.warehouseandroidtest.Utils.PreferenceUtil
-import nz.co.warehouseandroidtest.data.ProductDetail
+import nz.co.warehouseandroidtest.data.model.ProductDetail
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
