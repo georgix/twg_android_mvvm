@@ -1,11 +1,17 @@
 package nz.co.warehouseandroidtest.di
 
 import com.google.gson.Gson
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import nz.co.warehouseandroidtest.Constants
+import nz.co.warehouseandroidtest.data.remote.UserApi
+import nz.co.warehouseandroidtest.data.repository.UserRepository
+import nz.co.warehouseandroidtest.data.repository.UserRepositoryImp
+import nz.co.warehouseandroidtest.domain.UserUseCase
+import nz.co.warehouseandroidtest.domain.UserUseCaseImpl
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -50,4 +56,16 @@ class ApiModule {
 
         return client.build()
     }
+
+    @Provides
+    fun providesUserApi(retrofit: Retrofit) = retrofit.create(UserApi::class.java)
+
+    interface Binder {
+        @Binds
+        fun bindUserRepo(userRepository: UserRepositoryImp): UserRepository
+
+        @Binds
+        fun bindUserUseCase(userUseCase: UserUseCaseImpl): UserUseCase
+    }
+
 }
