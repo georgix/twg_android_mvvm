@@ -1,0 +1,325 @@
+{
+  "HitCount": "231",
+  "Results": [
+    {
+      "Description": "Mako Heat Gun",
+      "Products": [
+        {
+          "Class0": "Leisure",
+          "Barcode": "9400048541229",
+          "ItemDescription": "",
+          "DeptID": "06022",
+          "SubClass": "Heat Guns",
+          "Class0ID": "09939",
+          "SubDeptID": "6240",
+          "Description": "Mako Heat Gun",
+          "ItemCode": "",
+          "SubDept": "Power Tools",
+          "ClassID": "6805",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9400048541229/format/png/size/small",
+          "Dept": "Hardware",
+          "SubClassID": "4770",
+          "Class": "Power Tools",
+          "ProductKey": "1882523"
+        }
+      ]
+    },
+    {
+      "Description": "PS4 Need For Speed Heat",
+      "Products": [
+        {
+          "Class0": "Technology",
+          "Barcode": "5035224122479",
+          "ItemDescription": "",
+          "DeptID": "06061",
+          "SubClass": "PS4 Software",
+          "Class0ID": "09936",
+          "SubDeptID": "6291",
+          "Description": "PS4 Need For Speed Heat",
+          "ItemCode": "",
+          "SubDept": "Gaming Software",
+          "ClassID": "8752",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/5035224122479/format/png/size/small",
+          "Dept": "Gaming",
+          "SubClassID": "5108",
+          "Class": "Playstation Software",
+          "ProductKey": "2612517"
+        }
+      ]
+    },
+    {
+      "Description": "Protection 3YR HEAT PUMP 15%",
+      "Products": [
+        {
+          "Barcode": "09401063649945"
+        }
+      ]
+    },
+    {
+      "Description": "Deep Heat Regular Rub 100g",
+      "Products": [
+        {
+          "Class0": "Grocery",
+          "Barcode": "9310263021003",
+          "ItemDescription": "",
+          "DeptID": "06005",
+          "SubClass": "Medication Non Edible",
+          "Class0ID": "09935",
+          "SubDeptID": "6137",
+          "Description": "Deep Heat Regular Rub 100g",
+          "ItemCode": "",
+          "SubDept": "Medical & Vitamins",
+          "ClassID": "6440",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9310263021003/format/png/size/small",
+          "Dept": "Health & Wellbeing",
+          "SubClassID": "9431",
+          "Class": "Medical",
+          "ProductKey": "342045"
+        }
+      ]
+    },
+    {
+      "Description": "Schwarzkopf Extra Care Heat Styles Heat Protection Spray 250ml",
+      "Products": [
+        {
+          "Class0": "Grocery",
+          "Barcode": "9310714212530",
+          "ItemDescription": "",
+          "DeptID": "06071",
+          "SubClass": "Hair Styling Aids",
+          "Class0ID": "09935",
+          "SubDeptID": "7429",
+          "Description": "Schwarzkopf Extra Care Heat Styles Heat Protection Spray 250ml",
+          "ItemCode": "",
+          "SubDept": "Haircare",
+          "ClassID": "7444",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9310714212530/format/png/size/small",
+          "Dept": "H&B Everyday",
+          "SubClassID": "9461",
+          "Class": "Hair Care",
+          "ProductKey": "1614587"
+        }
+      ]
+    },
+    {
+      "Description": "Beyonce Heat Rush EDT 100ml",
+      "Products": [
+        {
+          "Class0": "Grocery",
+          "Barcode": "3607340302565",
+          "ItemDescription": "",
+          "DeptID": "06007",
+          "SubClass": "Womens Celebrity Fragrances",
+          "Class0ID": "09935",
+          "SubDeptID": "7839",
+          "Description": "Beyonce Heat Rush EDT 100ml",
+          "ItemCode": "",
+          "SubDept": "Fragrances",
+          "ClassID": "7440",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/3607340302565/format/png/size/small",
+          "Dept": "H&B Seasonal",
+          "SubClassID": "9243",
+          "Class": "Fragrances",
+          "ProductKey": "1586174"
+        }
+      ]
+    },
+    {
+      "Description": "Paladone Game Boy Heat Change Mug",
+      "Products": [
+        {
+          "Barcode": "05055964706630"
+        }
+      ]
+    },
+    {
+      "Description": "Paladone Xbox Heat Change Mug",
+      "Products": [
+        {
+          "Barcode": "05055964728991"
+        }
+      ]
+    },
+    {
+      "Description": "Beyonce Heat Kissed EDP 100ml",
+      "Products": [
+        {
+          "Class0": "Grocery",
+          "Barcode": "3614221120804",
+          "ItemDescription": "",
+          "DeptID": "06007",
+          "SubClass": "Womens Celebrity Fragrances",
+          "Class0ID": "09935",
+          "SubDeptID": "7839",
+          "Description": "Beyonce Heat Kissed EDP 100ml",
+          "ItemCode": "",
+          "SubDept": "Fragrances",
+          "ClassID": "7440",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/3614221120804/format/png/size/small",
+          "Dept": "H&B Seasonal",
+          "SubClassID": "9243",
+          "Class": "Fragrances",
+          "ProductKey": "2089877"
+        }
+      ]
+    },
+    {
+      "Description": "Cricut Infusible Ink Heat Resistant Tape",
+      "Products": [
+        {
+          "Barcode": "00093573759567"
+        }
+      ]
+    },
+    {
+      "Description": "XboxOne Need for Speed Heat",
+      "Products": [
+        {
+          "Class0": "Technology",
+          "Barcode": "5030937122488",
+          "ItemDescription": "",
+          "DeptID": "06061",
+          "SubClass": "XBOXONE Software",
+          "Class0ID": "09936",
+          "SubDeptID": "6291",
+          "Description": "XboxOne Need for Speed Heat",
+          "ItemCode": "",
+          "SubDept": "Gaming Software",
+          "ClassID": "8751",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/5030937122488/format/png/size/small",
+          "Dept": "Gaming",
+          "SubClassID": "5107",
+          "Class": "Xbox Software",
+          "ProductKey": "2612518"
+        }
+      ]
+    },
+    {
+      "Description": "Paladone Minecraft Creeper Heat Change Mug",
+      "Products": [
+        {
+          "Barcode": "05055964767105"
+        }
+      ]
+    },
+    {
+      "Description": "As Seen On TV Calming Heat",
+      "Products": [
+        {
+          "Barcode": "00740275053980"
+        }
+      ]
+    },
+    {
+      "Description": "Couture Creations Multi Purpose Heat Tool",
+      "Products": [
+        {
+          "Class0": "Stationery",
+          "Barcode": "9332839010594",
+          "ItemDescription": "",
+          "DeptID": "06032",
+          "SubClass": "Electronic Craft Tools & Acc",
+          "Class0ID": "09929",
+          "SubDeptID": "6284",
+          "Description": "Couture Creations Multi Purpose Heat Tool",
+          "ItemCode": "",
+          "SubDept": "Craft",
+          "ClassID": "7026",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9332839010594/format/png/size/small",
+          "Dept": "Craft",
+          "SubClassID": "2680",
+          "Class": "Craft Tools",
+          "ProductKey": "1886297"
+        }
+      ]
+    },
+    {
+      "Description": "Heat Resistant Tape Dye Sub",
+      "Products": [
+        {
+          "Class0": "Print & Copy Centre",
+          "Barcode": "9401056593019",
+          "ItemDescription": "",
+          "DeptID": "05788",
+          "SubClass": "Dye Consumables (COGS)",
+          "Class0ID": "09923",
+          "SubDeptID": "6281",
+          "Description": "Heat Resistant Tape Dye Sub",
+          "ItemCode": "",
+          "SubDept": "Digital Print",
+          "ClassID": "5619",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9401056593019/format/png/size/small",
+          "Dept": "Digital Print",
+          "SubClassID": "1276",
+          "Class": "Digital Creative",
+          "ProductKey": "2535623"
+        }
+      ]
+    },
+    {
+      "Description": "Paladone Animal Crossing Heat Change Mug",
+      "Products": [
+        {
+          "Barcode": "05055964763732"
+        }
+      ]
+    },
+    {
+      "Description": "Beyonce Heat EDP 100ml",
+      "Products": [
+        {
+          "Class0": "Grocery",
+          "Barcode": "3607344343892",
+          "ItemDescription": "",
+          "DeptID": "06007",
+          "SubClass": "Womens Celebrity Fragrances",
+          "Class0ID": "09935",
+          "SubDeptID": "7839",
+          "Description": "Beyonce Heat EDP 100ml",
+          "ItemCode": "",
+          "SubDept": "Fragrances",
+          "ClassID": "7440",
+          "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/3607344343892/format/png/size/small",
+          "Dept": "H&B Seasonal",
+          "SubClassID": "9243",
+          "Class": "Fragrances",
+          "ProductKey": "1680123"
+        }
+      ]
+    },
+    {
+      "Description": "Beyonce Heat Seduction EDT 50ml",
+      "Products": [
+        {
+          "Class0": "Grocery",
+          "Barcode": "3614222147930",
+          "ItemDescription": "",
+          "DeptID": "06007",
+          "SubClass": "Womens Celebrity Fragrances",
+          "Class0ID": "09935",
+          "SubDeptID": "7839",
+          "Description": "Beyonce Heat Seduction EDT 50ml",
+          "ItemCode": "",
+          "SubDept": "Fragrances",
+          "ClassID":"7440",
+          "ImageURL":"https://twg.azure-api.net/twlProductImage/productImage/3614222147930/format/png/size/small",
+          "Dept":"H&B Seasonal",
+          "SubClassID":"9243",
+          "Class":"Fragrances",
+          "ProductKey":"2749071"
+        }
+      ]
+    },
+    {
+      "Description":"Paladone Mario Kart Heat Change Mug",
+      "Products":[
+        {
+          "Barcode":"05055964770433"
+        }
+      ]
+    }
+  ],
+  "SearchID":"39735",
+  "ProdQAT":"Prod",
+  "Found":"Y"
+}

@@ -1,0 +1,34 @@
+{
+  "MachineID": "123456789",
+  "Action": "S",
+  "ScanBarcode": "9400048541229",
+  "ScanID": "1868332",
+  "UserDescription": "",
+  "Product": {
+    "Class0": "Leisure",
+    "Price": {
+      "Price": "35",
+      "Type": "NAT"
+    },
+    "Barcode": "9400048541229",
+    "ItemDescription": "",
+    "DeptID": "06022",
+    "SubClass": "Heat Guns",
+    "Class0ID": "09939",
+    "SubDeptID": "6240",
+    "Description": "Mako Heat Gun",
+    "BranchPrice": "35",
+    "ItemCode": "",
+    "SubDept": "Power Tools",
+    "ClassID": "6805",
+    "ImageURL": "https://twg.azure-api.net/twlProductImage/productImage/9400048541229/format/png/size/small",
+    "Dept": "Hardware",
+    "SubClassID": "4770",
+    "Class": "Power Tools",
+    "ProductKey": "1882523"
+  },
+  "ProdQAT": "Prod",
+  "ScanDateTime": "2022-07-10T23:21:32",
+  "Found": "Y",
+  "UserID": "1B2631A6-A5B7-47FE-840F-692D53E03724"
+}
